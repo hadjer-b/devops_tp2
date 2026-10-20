@@ -1,0 +1,47 @@
+
+git init
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/hadjer-b/devops_tp2.git
+git push -u origin main
+
+cat << 'EOF' > .gitignore
+*.log
+*.tar.gz
+EOF
+
+git add .gitignore
+git commit -m "Chore: Initialisation du dépôt tp-bash avec .gitignore"
+git push -u origin main
+
+
+1.
+mkdir -p logs data
+touch logs/app1.log logs/app2.log logs/system.txt data/data1.csv
+
+2.
+$ ls -lh logs/*.log
+-rw-rw-r-- 1 pot pot 0 Oct 20 10:45 logs/app1.log
+-rw-rw-r-- 1 pot pot 0 Oct 20 10:45 logs/app2.log
+
+
+
+3. 
+find . -type f -mtime +7
+
+4. 
+grep -ri "erreur" logs/*.log
+
+
+echo "2026-10-20 10:48:00 [ERROR] une erreur" >> logs/app1.log
+
+
+grep -ri "erreur" logs/*.log
+$ grep -ri "erreur" logs/*.log
+logs/app1.log:2026-10-20 10:48:00 [ERROR] une erreur
+
+
+5. 
+$ touch test.sh
+pot@pot-Vostro:~/Documents/studies_5/DEVOPS/TP2$ chmod 700 test.sh
+
