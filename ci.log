@@ -1,0 +1,20 @@
+2026-10-27 10:44:01 - start pipeline CI
+2026-10-27 10:44:01 - Clone deport...
+2026-10-27 10:44:04 - FAILURE : les tests non pas reussie
+2026-10-27 10:47:57 - start pipeline CI
+2026-10-27 10:47:57 - Update deport..
+Already up to date.
+2026-10-27 10:48:05 - Execute tests (checking for required files)
+2026-10-27 10:48:05 -  - ECHEC : check_disk.sh est manquant !
+2026-10-27 10:48:05 -  - ECHEC : backup.sh est manquant !
+2026-10-27 10:48:05 -  - ECHEC : ci.sh est manquant !
+2026-10-27 10:48:05 -  - ECHEC : backup.log est manquant !
+2026-10-27 10:48:05 - FAILURE : les tests non pas reussie
+2026-10-27 10:52:11 - start pipeline CI
+2026-10-27 10:52:11 - Clone deport...
+2026-10-27 10:52:22 - Execute tests (checking for required files)
+2026-10-27 10:52:22 -  - OK : check_disk.sh est présent.
+2026-10-27 10:52:22 -  - OK : backup.sh est présent.
+2026-10-27 10:52:22 -  - OK : ci.sh est présent.
+2026-10-27 10:52:22 -  - ECHEC : backup.log est manquant !
+2026-10-27 10:52:22 - FAILURE : les tests non pas reussie
